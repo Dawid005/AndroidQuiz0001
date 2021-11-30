@@ -1,0 +1,65 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".SecondQuestion"
+    android:orientation="vertical">
+
+    <TextView
+        android:gravity="center"
+        android:layout_marginTop="10dp"
+        android:id="@+id/textView"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="@string/secondQuestionContent"
+        android:textSize="20dp"/>
+
+    <RadioGroup
+        android:id="@+id/secondQuestionGroup"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="40dp">
+
+        <RadioButton
+            android:id="@+id/secondQuestionA"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="@string/secondQuestionA" />
+
+        <RadioButton
+            android:id="@+id/secondQuestionB"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="@string/secondQuestionB" />
+
+        <RadioButton
+            android:id="@+id/secondQuestionC"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="@string/secondQuestionC" />
+
+        <RadioButton
+            android:id="@+id/secondQuestionD"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="@string/secondQuestionD" />
+
+    </RadioGroup>
+
+    <Button
+        android:onClick="secondQuestionNext"
+        android:layout_marginTop="150dp"
+        android:id="@+id/secondQuestionNext"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="@string/nextQuestion" />
+
+    <TextView
+        android:layout_marginTop="60dp"
+        android:id="@+id/textView2"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="@string/author" />
+</LinearLayout>

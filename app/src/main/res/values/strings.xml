@@ -1,0 +1,27 @@
+<resources>
+    <string name="app_name">Quiz</string>
+    <string name="startQuiz">Start Quiz</string>
+    <string name="buttonStart">Start</string>
+    <string name="author">Created by Dawid</string>
+    <string name="nextQuestion">Next Question</string>
+
+    <string name="firstQuestionContent">which year java was developed?</string>
+    <string name="firstQuestionA">1996</string>
+    <string name="firstQuestionB">1995</string>
+    <string name="firstQuestionC">2005</string>
+    <string name="firstQuestionD">1998</string>
+
+    <string name="secondQuestionContent">Which sea creature has three hearts?</string>
+    <string name="secondQuestionA">Octopus</string>
+    <string name="secondQuestionB">Lion</string>
+    <string name="secondQuestionC">Whale</string>
+    <string name="secondQuestionD">Elephant</string>
+
+    <string name="thirdQuestionContent">Name the port of Rome:</string>
+    <string name="thirdQuestionA">Appius</string>
+    <string name="thirdQuestionB">Ostia</string>
+    <string name="thirdQuestionC">Caeso</string>
+    <string name="thirdQuestionD">Publius</string>
+
+    <string name="score">Your score is:</string>
+</resources>
