@@ -12,6 +12,8 @@ public class SecondQuestion extends AppCompatActivity {
 
     private int result=0;
 
+    private boolean flag = true;
+
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
@@ -25,14 +27,13 @@ public class SecondQuestion extends AppCompatActivity {
     public void secondQuestionNext(View view){
         RadioGroup radioGroup = (RadioGroup) findViewById(R.id.secondQuestionGroup);
         int id = radioGroup.getCheckedRadioButtonId();
-
-        if(id==2131231209){
-            result = result +1;
+        if(flag) {
+            if (id == 2131231209) {
+                result = result + 1;
+            }
         }
-        TextView textView = (TextView) findViewById(R.id.textView2);
-        String resultString = Integer.toString(result);
-        textView.setText(resultString);
 
+        flag = false;
         Intent intent = new Intent(this, ThirdQuestion.class);
 
         intent.putExtra("result", result);

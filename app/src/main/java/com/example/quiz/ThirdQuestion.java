@@ -13,6 +13,7 @@ import org.w3c.dom.Text;
 public class ThirdQuestion extends AppCompatActivity {
 
     private int result=0;
+    private boolean flag = true;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -27,13 +28,13 @@ public class ThirdQuestion extends AppCompatActivity {
     public void thirdQuestionNext(View view){
         RadioGroup radioGroup = (RadioGroup) findViewById(R.id.thirdQuestionGroup);
         int id = radioGroup.getCheckedRadioButtonId();
-
-        if(id==2131231216){
-            result = result +1;
+        if(flag) {
+            if (id == 2131231216) {
+                result = result + 1;
+            }
         }
-        TextView textView = (TextView) findViewById(R.id.textView2);
-        String resultString = Integer.toString(result);
-        textView.setText(resultString);
+
+        flag=false;
 
         Intent intent = new Intent(this, Score.class);
 
